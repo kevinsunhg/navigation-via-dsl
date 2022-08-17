@@ -16,6 +16,10 @@ object ModuleBNavBuilder {
                     type = NavType.StringType
                     nullable = true
                 }
+
+                deepLink {
+                    uriPattern = "testnavigation://fragmentB"
+                }
             }
         }
     }

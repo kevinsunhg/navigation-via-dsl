@@ -6,6 +6,7 @@ import androidx.navigation.createGraph
 import androidx.navigation.fragment.NavHostFragment
 import com.example.firstmodule.ModuleBNavBuilder
 import com.example.modulea.ModuleANavBuilder
+import com.example.modulenestedgraph.ModuleNestedNavBuilder
 import com.example.navigation.NavRoute
 import com.example.secondmodule.ModuleCNavBuilder
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             ModuleANavBuilder.buildNavGraph(this)
             ModuleBNavBuilder.buildNavGraph(this)
             ModuleCNavBuilder.buildNavGraph(this)
+            ModuleNestedNavBuilder.buildNavGraph(this)
         }
 
     }
