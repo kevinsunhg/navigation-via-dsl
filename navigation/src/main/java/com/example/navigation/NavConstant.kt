@@ -6,11 +6,20 @@ object NavRoute {
     const val fragmentB = "fragmentB"
     const val fragmentC = "fragmentC"
 
-    const val nestedGraph = "nestedGraph"
+    const val nestedGraphParent = "nestedGraphParent"
+    const val nestedGraphChild = "nestedGraphChild"
     const val fragmentNestedParent = "fragmentNestedParent"
-    const val fragmentNestedChild = "fragmentNestedChild"
+    const val fragmentNestedChildA = "fragmentNestedChildA"
+    const val fragmentNestedChildB = "fragmentNestedChildB"
 }
 
 object NavArguments {
     const val fragmentBArg = "fragmentBArg"
+}
+
+object NavDeepLink {
+    const val fragmentBDeepLinkScheme = "testnavigation://fragmentB"
+
+    const val fragmentNestedChildADeepLink = "testnavigation://fragmentNestedChildA"
+    const val fragmentNestedChildBDeepLink = "testnavigation://fragmentNestedChildB"
 }

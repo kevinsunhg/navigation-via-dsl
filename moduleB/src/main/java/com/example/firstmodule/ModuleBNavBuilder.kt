@@ -4,6 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.fragment.fragment
 import com.example.navigation.NavArguments
+import com.example.navigation.NavDeepLink
 import com.example.navigation.NavRoute
 
 object ModuleBNavBuilder {
@@ -18,7 +19,8 @@ object ModuleBNavBuilder {
                 }
 
                 deepLink {
-                    uriPattern = "testnavigation://fragmentB"
+                    uriPattern =
+                        "${NavDeepLink.fragmentBDeepLinkScheme}?${NavArguments.fragmentBArg}={${NavArguments.fragmentBArg}}"
                 }
             }
         }
