@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.navOptions
 import com.example.navigation.NavArguments
 import com.example.navigation.NavRoute
+import com.example.navigation.defaultSlidingNavOption
 
 class FragmentA : Fragment() {
 
@@ -28,14 +28,7 @@ class FragmentA : Fragment() {
             val text = view.findViewById<EditText>(R.id.textInput).text.toString()
             findNavController().navigate(
                 route = "${NavRoute.fragmentB}?${NavArguments.fragmentBArg}=${text}",
-                navOptions = navOptions {
-                    anim {
-                        enter = com.example.navigation.R.anim.translate_from_right
-                        exit = com.example.navigation.R.anim.translate_to_left
-                        popEnter = com.example.navigation.R.anim.translate_from_left
-                        popExit = com.example.navigation.R.anim.translate_to_right
-                    }
-                }
+                navOptions = defaultSlidingNavOption()
             )
         }
     }

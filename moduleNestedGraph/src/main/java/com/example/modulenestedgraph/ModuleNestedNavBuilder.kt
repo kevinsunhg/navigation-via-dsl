@@ -36,8 +36,6 @@ object ModuleNestedNavBuilder {
                             uriPattern = NavDeepLink.fragmentNestedChildBDeepLink
                         }
                     }
-
-
                 }
             }
         }

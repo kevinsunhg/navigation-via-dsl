@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.navigation.NavArguments
 import com.example.navigation.NavRoute
+import com.example.navigation.defaultSlidingNavOption
 
 class FragmentB : Fragment() {
 
@@ -27,14 +28,10 @@ class FragmentB : Fragment() {
         val arg = arguments?.getString(NavArguments.fragmentBArg)
         view.findViewById<TextView>(R.id.arg).text = arg
         view.findViewById<Button>(R.id.click).setOnClickListener {
-            findNavController().navigate(NavRoute.fragmentC){
-                anim {
-                    enter = com.example.navigation.R.anim.translate_from_right
-                    exit = com.example.navigation.R.anim.translate_to_left
-                    popEnter = com.example.navigation.R.anim.translate_from_left
-                    popExit = com.example.navigation.R.anim.translate_to_right
-                }
-            }
+            findNavController().navigate(
+                route = NavRoute.fragmentC,
+                navOptions =  defaultSlidingNavOption()
+            )
         }
     }
 }

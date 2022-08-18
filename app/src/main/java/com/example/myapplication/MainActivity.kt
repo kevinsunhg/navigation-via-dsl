@@ -27,6 +27,5 @@ class MainActivity : AppCompatActivity() {
             ModuleCNavBuilder.buildNavGraph(this)
             ModuleNestedNavBuilder.buildNavGraph(this)
         }
-
     }
 }
