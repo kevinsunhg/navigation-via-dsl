@@ -1,11 +1,11 @@
 # navigation-via-dsl
 show case of navigation via Kotlin DSK for multi module project
 
-# Building Navigation graph via Kotlin DSL
+## Building Navigation graph via Kotlin DSL
 
 [Building graph programmatically using Kotlin DSK](https://developer.android.com/guide/navigation/navigation-kotlin-dsl)
 
-#High level project structure
+###High level project structure
 In this sample multi module projects. It is structured as single activity multi fragments structure.
 
 App module has the MainActivity, 
@@ -20,7 +20,7 @@ This project has no graph.xml file and purely builds the graph via kotlin DSL.
 
 Building the graph no longer lives in the app module. Each module is responsible for building the graph for fragments it contains.
 
-#Show case some common usage of navigation between modules
+####Show case some common usage of navigation between modules
 
 1. using NavController to directly perform navigation. (see the code in FragmentA findNavController().navigate())
 2. Perform navigation animation (See the usage of defaultSlidingNavOption() in NavConstant.kt file)
