@@ -38,7 +38,7 @@ Building the graph no longer lives in the app module. Each module is responsible
  
 * Try **adb shell am start -W -a android.intent.action.VIEW -d "testnavigation://fragmentNestedChildA"**
     
-* It will deep linking to the fragmentNestedChildA, and when you keep press back. The back stack should look like below.
+* It will deep linking to the fragmentNestedChildA, and when you keep pressing back. The back stack should look like below.
  
-* fragmentNestedChildA ---> FragmentNestedParent ---> FragmentA ---> exit the app
+* fragmentNestedChildA --->(Go back) FragmentNestedParent --->(Go back) FragmentA --->(Go back) exit the app
 
