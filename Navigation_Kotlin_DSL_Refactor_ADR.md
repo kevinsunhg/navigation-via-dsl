@@ -108,7 +108,7 @@ we fully move to build NavGraph from Kotlin. the Migration plan has below steps:
   navigation. changes will be similar to below
 
 ### In progress:
-* iron out navigation DSL support for custom type (arguments)[https://developer.android.com/guide/navigation/navigation-kotlin-dsl]
+* iron out navigation DSL support for custom type [arguments](https://developer.android.com/guide/navigation/navigation-kotlin-dsl)
 * Team buy in for the refactor plan
 
 ## Resources
