@@ -24,7 +24,9 @@ bigger and it would be hard to maintain.
 To use Navigation Component directly in UI features in a multi-module Android project, Navigation Component
 supports [building the graph programmatically from Kotlin code](https://developer.android.com/guide/navigation/navigation-kotlin-dsl)
 . When building the navGraph from Kotlin code, `graph.xml` file is not needed, Instead, One can define the String Route
-for destination fragment in each module by below. See [DiscoverNavBuilder](https://github.com/Hinge/android/blob/5493c87c4868b1a388058fa0d010c47691f3e995/features/home/discover/src/main/java/co/hinge/discover/nav/DiscoverNavBuilder.kt) for example.
+for destination fragment in each module by below.
+See [DiscoverNavBuilder](https://github.com/Hinge/android/blob/5493c87c4868b1a388058fa0d010c47691f3e995/features/home/discover/src/main/java/co/hinge/discover/nav/DiscoverNavBuilder.kt)
+for example.
 
 ```
         navGraphBuilder.apply {
@@ -64,7 +66,8 @@ To ensure existing navigation does not break and new fragments, and actions adde
 we fully move to build NavGraph from Kotlin. the Migration plan has below steps:
 
 * Convert all `<fragment>`, `<navigation>`, `<dialog>` in `graph.xml` to build NavGraph using Kotlin code
-* in each place where `navigateTo(route = router.fragmentAToFragmentB())` is used, provide navigation as below to add `navRouteBundle`
+* in each place where `navigateTo(route = router.fragmentAToFragmentB())` is used, provide navigation as below to
+  add `navRouteBundle`
 
 ```
         navigateTo(
@@ -82,7 +85,8 @@ we fully move to build NavGraph from Kotlin. the Migration plan has below steps:
         )
 ```
 
-* in each fragment, add below code so that when feature flag is turned on, the navigation will be performed in each fragment
+* in each fragment, add below code so that when feature flag is turned on, the navigation will be performed in each
+  fragment
   directly.
 
 ```
@@ -104,4 +108,5 @@ we fully move to build NavGraph from Kotlin. the Migration plan has below steps:
   navigation. changes will be similar to below
 
 ## Resources
+
 [Navigation via DSL Migration Strategy](https://github.com/Hinge/android/pull/7714)
