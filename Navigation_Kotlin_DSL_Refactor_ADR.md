@@ -112,6 +112,6 @@ we fully move to build NavGraph from Kotlin. the Migration plan has below steps:
 * Team buy in for the refactor plan
 
 ## Resources
-[Android Navigation Notion](https://www.notion.so/hinge/Android-Navigation-100-c7eb17ec2c18457ca1c2abfe47f17036)
-[Android Navigation Refactor shortcut epic](https://app.shortcut.com/hingegroups/epic/94680/android-navigation-refactor?cf_workflow=500012091&ct_workflow=all&group_by=none)
-[Navigation via DSL Migration Strategy](https://github.com/Hinge/android/pull/7714)
+* [Android Navigation Notion](https://www.notion.so/hinge/Android-Navigation-100-c7eb17ec2c18457ca1c2abfe47f17036)
+* [Android Navigation Refactor shortcut epic](https://app.shortcut.com/hingegroups/epic/94680/android-navigation-refactor?cf_workflow=500012091&ct_workflow=all&group_by=none)
+* [Navigation via DSL Migration Strategy](https://github.com/Hinge/android/pull/7714)
