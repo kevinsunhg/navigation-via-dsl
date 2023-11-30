@@ -1,5 +1,5 @@
 # navigation-via-dsl
-show case of navigation via Kotlin DSK for multi module project
+show case of navigation via Kotlin DSL for multi module project
 
 ## Building Navigation graph via Kotlin DSL
 
